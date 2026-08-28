@@ -1,1 +1,133 @@
-anything
+# Retail Profitability Analytics
+
+A data analytics and machine learning project that explores
+patterns associated with unprofitable retail orders and presents
+the findings through an interactive Power BI dashboard.
+
+**Technologies:** Python, Scikit-learn, Power BI
+
+## Overview
+
+High sales do not always mean high profits. Retail businesses
+can lose money on individual orders because of discounting,
+product-level performance and other operational factors.
+
+This project analyses a synthetic dataset containing
+**105,000 retail records** to identify profitability patterns,
+investigate loss-making orders and communicate useful insights.
+
+It combines data analysis, a Gradient Boosting classification
+model and an interactive Power BI dashboard.
+
+> This is a simulated business case. The results do not represent
+> financial outcomes achieved for a real client.
+
+## Objectives
+
+- Identify patterns associated with loss-making orders.
+- Examine the relationship between discounts and profitability.
+- Identify product areas contributing heavily to losses.
+- Build a model that flags potentially unprofitable orders.
+- Present the findings through an interactive dashboard.
+
+## Key Findings
+
+| Finding | Result |
+|---|---:|
+| Records analysed | 105,000 |
+| Loss-making orders in the above-20% discount group | 59.3% |
+| Loss-making orders in the comparison group | 19.7% |
+| Loss identified across two product sub-categories | $647K |
+
+These findings describe patterns within the synthetic dataset.
+They should not be interpreted as real-world financial savings
+or proof that discounting alone caused the losses.
+
+## Analytical Components
+
+### 1. Discount and Profitability Analysis
+
+Compared the share of loss-making orders across discount groups
+to understand how discount levels are associated with profitability.
+
+### 2. Product-Level Loss Analysis
+
+Investigated losses across product sub-categories and identified
+two sub-categories accounting for $647K in losses within the
+simulated dataset.
+
+### 3. Machine Learning
+
+Built a **Gradient Boosting classifier** using Scikit-learn
+to flag unprofitable orders.
+
+The classification component complements the descriptive
+analysis by identifying patterns associated with profitability.
+
+<!-- Add verified model inputs, target definition,
+train/test split and evaluation metrics here. -->
+
+### 4. Interactive Reporting
+
+Built an interactive **Power BI dashboard** to explore
+profitability and communicate the analytical findings.
+
+## Power BI Dashboard
+
+The dashboard presents the project's profitability analysis
+in an interactive format, connecting the Python analysis
+with a business-facing view of the results.
+
+<!-- Upload a dashboard screenshot, then uncomment this line. -->
+<!-- ![Power BI Dashboard](assets/dashboard-overview.png) -->
+
+## Technology Stack
+
+| Area | Tools |
+|---|---|
+| Data analysis | Python |
+| Machine learning | Scikit-learn, Gradient Boosting |
+| Interactive reporting | Power BI |
+
+<!-- Add setup commands and exact filenames after checking
+the repository's actual files and dependencies. -->
+
+## Business Interpretation
+
+The findings suggest two areas worth investigating further
+in the simulated business:
+
+- **Discount policy:** Review the relationship between high
+  discounts and loss-making orders before making pricing decisions.
+- **Product profitability:** Investigate the two loss-contributing
+  sub-categories to understand the underlying drivers.
+
+These are directions for further analysis, not validated
+recommendations for a real retailer.
+
+## Limitations
+
+- The dataset is synthetic and may not represent every real
+  retail environment.
+- The findings show associations, not guaranteed causal
+  relationships.
+- The model requires validation on unseen real-world data
+  before business use.
+- Business decisions should consider operational context
+  alongside analytical findings and model predictions.
+
+## Future Improvements
+
+- Validate the analysis using anonymised real-world retail data.
+- Compare additional classifiers against suitable baselines.
+- Add model explainability using feature importance or SHAP.
+- Extend the analysis to time-based and regional trends.
+- Automate data refresh between Python and Power BI.
+- Deploy the prediction model through a web application or API.
+
+## Author
+
+**Abhishikta Dutta**
+
+- [LinkedIn](https://www.linkedin.com/in/abhishikta-dutta1)
+- [GitHub](https://github.com/abhishiktadutta)
